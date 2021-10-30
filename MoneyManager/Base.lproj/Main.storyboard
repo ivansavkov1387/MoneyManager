@@ -268,7 +268,7 @@
                                 <rect key="frame" x="0.0" y="636" width="414" height="260"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="KxV-lr-t5N">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="KxV-lr-t5N" customClass="CustomTableViewCell" customModule="MoneyManager" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KxV-lr-t5N" id="jZ1-If-oDp">
@@ -309,6 +309,11 @@
                                             <constraint firstItem="WoN-yP-Gbp" firstAttribute="width" secondItem="KxV-lr-t5N" secondAttribute="width" multiplier="0.103865" id="tco-Vr-Sxn"/>
                                             <constraint firstItem="WoN-yP-Gbp" firstAttribute="height" secondItem="KxV-lr-t5N" secondAttribute="height" multiplier="0.534351" id="xEq-hn-KHd"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="recordCategory" destination="zkW-KN-Ibw" id="LHZ-UI-nvM"/>
+                                            <outlet property="recordCost" destination="WoN-yP-Gbp" id="dYz-cF-hLN"/>
+                                            <outlet property="recordImage" destination="Nea-wd-2qp" id="i9y-ip-wtd"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -327,6 +332,9 @@
                                                 <state key="normal" title="Button" backgroundImage="Category_Еда">
                                                     <color key="titleColor" red="1" green="0.38431372549019605" blue="0.38431372549019605" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oLF-Gd-HQf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StC-VA-p6e">
                                                 <rect key="frame" x="0.0" y="50.666666666666629" width="55.666666666666664" height="20.333333333333329"/>
@@ -349,6 +357,9 @@
                                                 <state key="normal" title="Button" backgroundImage="Category_Одежда">
                                                     <color key="titleColor" red="1" green="0.38431372549019605" blue="0.38431372549019605" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a2F-c9-WfF"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGe-Ds-lAx">
                                                 <rect key="frame" x="0.0" y="50.666666666666629" width="55.666666666666664" height="20.333333333333329"/>
@@ -371,6 +382,9 @@
                                                 <state key="normal" title="Button" backgroundImage="Category_Связь">
                                                     <color key="titleColor" red="1" green="0.38431372549019605" blue="0.38431372549019605" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wPU-dE-gmD"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJK-Z1-dbw">
                                                 <rect key="frame" x="0.0" y="50.666666666666629" width="55.666666666666664" height="20.333333333333329"/>
@@ -393,6 +407,9 @@
                                                 <state key="normal" title="Button" backgroundImage="Category_Досуг">
                                                     <color key="titleColor" red="1" green="0.38431372549019605" blue="0.38431372549019605" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1to-t2-JHX"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLK-lI-nyr">
                                                 <rect key="frame" x="0.0" y="50.666666666666629" width="55.666666666666664" height="20.333333333333329"/>
@@ -415,6 +432,9 @@
                                                 <state key="normal" title="Button" backgroundImage="Category_Красота">
                                                     <color key="titleColor" red="1" green="0.38431372549019605" blue="0.38431372549019605" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hkJ-J6-BkQ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEr-1C-27n">
                                                 <rect key="frame" x="0.0" y="50.666666666666629" width="55.666666666666664" height="20.333333333333329"/>
@@ -437,6 +457,9 @@
                                                 <state key="normal" title="Button" backgroundImage="Category_Авто">
                                                     <color key="titleColor" red="1" green="0.38431372549019605" blue="0.38431372549019605" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="categoryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AUU-AV-o8c"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlo-sa-HdV">
                                                 <rect key="frame" x="0.0" y="50.666666666666629" width="55.666666666666664" height="20.333333333333329"/>
@@ -598,6 +621,7 @@
                     <navigationItem key="navigationItem" title="Money" id="ps9-Ln-jEk"/>
                     <connections>
                         <outlet property="displayLabel" destination="Bnb-4y-LVj" id="8xx-qJ-hXC"/>
+                        <outlet property="tableView" destination="efM-kZ-bNL" id="hbg-FM-laF"/>
                         <outletCollection property="keyboardButtons" destination="8SF-tY-P7b" collectionClass="NSMutableArray" id="oXv-h2-a1U"/>
                         <outletCollection property="keyboardButtons" destination="6az-Iw-ecw" collectionClass="NSMutableArray" id="qfK-FW-fVR"/>
                         <outletCollection property="keyboardButtons" destination="tzq-Ql-7Uv" collectionClass="NSMutableArray" id="0Ab-Ad-IlD"/>
@@ -635,7 +659,7 @@
         <scene sceneID="Lzv-6S-xoc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1So-p5-jyA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="cart.badge.minus.fill" catalog="system" id="aOd-lR-u3f"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="cart.fill.badge.minus" catalog="system" id="aOd-lR-u3f"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9DY-gV-rX4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -661,7 +685,7 @@
         <image name="Category_Красота" width="64" height="64"/>
         <image name="Category_Одежда" width="64" height="64"/>
         <image name="Category_Связь" width="64" height="64"/>
-        <image name="cart.badge.minus.fill" catalog="system" width="128" height="106"/>
+        <image name="cart.fill.badge.minus" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
