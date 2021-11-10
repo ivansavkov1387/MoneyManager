@@ -91,6 +91,7 @@ class ViewController: UIViewController {
             guard sumTF != "" && daysTF != "" else { return }
             
             self.limitLabel.text = sumTF
+            self.howManyCanSpendLabel.text = sumTF
             
             let currentDate = Date()
             let lastDay = currentDate.addingTimeInterval(60*60*24*Double(daysTF!)!)
@@ -108,10 +109,9 @@ class ViewController: UIViewController {
                     limit[0].limitLastDay = lastDay as NSDate
                 }
             }
+
         }
-        
-        leftLabels()
-        
+                
         alertController.addAction(alertInstall)
         alertController.addTextField { (money) in
             money.placeholder = "Сумма"
@@ -126,6 +126,8 @@ class ViewController: UIViewController {
         let alertCancel = UIAlertAction(title: "Отмена", style: .default)
         alertController.addAction(alertCancel)
         present(alertController, animated: true)
+        
+        self.leftLabels()
         
     }
     
@@ -197,10 +199,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             try! realm.write {
                 realm.delete(editingRow)
             }
-            tableView.deleteRows(at: [indexPath], with: .fade)
             
             leftLabels()
             allSpending()
+            
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+
             
         }
     }
