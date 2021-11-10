@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3F2E04B40BB051E84E16E609 /* Pods_MoneyManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FBBA188E5E5B63FA03E2430 /* Pods_MoneyManager.framework */; };
+		B441A52927390F2400700539 /* SpendingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441A52827390F2400700539 /* SpendingModel.swift */; };
 		B49B6A1D2716044F006D5CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49B6A1C2716044F006D5CA4 /* AppDelegate.swift */; };
 		B49B6A1F2716044F006D5CA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49B6A1E2716044F006D5CA4 /* SceneDelegate.swift */; };
 		B49B6A212716044F006D5CA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49B6A202716044F006D5CA4 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		287A531A82AFE88439418795 /* Pods-MoneyManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyManager.release.xcconfig"; path = "Target Support Files/Pods-MoneyManager/Pods-MoneyManager.release.xcconfig"; sourceTree = "<group>"; };
 		6FBBA188E5E5B63FA03E2430 /* Pods_MoneyManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B441A52827390F2400700539 /* SpendingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingModel.swift; sourceTree = "<group>"; };
 		B49B6A192716044F006D5CA4 /* MoneyManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49B6A1C2716044F006D5CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B49B6A1E2716044F006D5CA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +52,6 @@
 				DABA599A075B0D0FFD4867E7 /* Pods-MoneyManager.debug.xcconfig */,
 				287A531A82AFE88439418795 /* Pods-MoneyManager.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -86,6 +87,7 @@
 				B49B6A1C2716044F006D5CA4 /* AppDelegate.swift */,
 				B49B6A1E2716044F006D5CA4 /* SceneDelegate.swift */,
 				B49B6A202716044F006D5CA4 /* ViewController.swift */,
+				B441A52827390F2400700539 /* SpendingModel.swift */,
 				B49B6A31272DAC49006D5CA4 /* CustomTableViewCell.swift */,
 				B49B6A222716044F006D5CA4 /* Main.storyboard */,
 				B49B6A2527160452006D5CA4 /* Assets.xcassets */,
@@ -212,6 +214,7 @@
 				B49B6A212716044F006D5CA4 /* ViewController.swift in Sources */,
 				B49B6A1D2716044F006D5CA4 /* AppDelegate.swift in Sources */,
 				B49B6A32272DAC4C006D5CA4 /* CustomTableViewCell.swift in Sources */,
+				B441A52927390F2400700539 /* SpendingModel.swift in Sources */,
 				B49B6A1F2716044F006D5CA4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -228,7 +228,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8SF-tY-P7b">
-                                <rect key="frame" x="184.5" y="327" width="56" height="67"/>
+                                <rect key="frame" x="186.5" y="327" width="55.5" height="67"/>
                                 <color key="backgroundColor" red="1" green="0.38431372549019605" blue="0.38431372549019605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
                                 <state key="normal" title="0">
@@ -244,7 +244,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vqp-Qz-HM6">
-                                <rect key="frame" x="241.5" y="327" width="113.5" height="67"/>
+                                <rect key="frame" x="243" y="327" width="112" height="67"/>
                                 <color key="backgroundColor" red="1" green="0.38431372549019605" blue="0.38431372549019605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
                                 <state key="normal" title="С">
@@ -265,7 +265,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="S3u-pg-79v">
                                         <rect key="frame" x="0.0" y="0.0" width="151.5" height="174"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="754" text="Лимит в месяц:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFa-id-6VL">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="754" text="Лимит:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFa-id-6VL">
                                                 <rect key="frame" x="0.0" y="0.0" width="151.5" height="29"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="15"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -309,6 +309,9 @@
                                         <state key="normal" title="Установить лимит">
                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="limitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zTn-9L-oBU"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Pxx-Kz-OQA">
                                         <rect key="frame" x="0.0" y="212.5" width="151.5" height="58"/>
@@ -368,7 +371,7 @@
                                                     <rect key="frame" x="12" y="2" width="36" height="39.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkW-KN-Ibw">
-                                                    <rect key="frame" x="60" y="11" width="214.5" height="24"/>
+                                                    <rect key="frame" x="68" y="11" width="215" height="24"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -377,6 +380,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="WoN-yP-Gbp" secondAttribute="trailing" constant="19" id="BkA-aa-khm"/>
                                                 <constraint firstItem="WoN-yP-Gbp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zkW-KN-Ibw" secondAttribute="trailing" constant="8" symbolic="YES" id="mLa-Sy-oOb"/>
+                                                <constraint firstItem="zkW-KN-Ibw" firstAttribute="leading" secondItem="Nea-wd-2qp" secondAttribute="trailing" constant="20" id="zPx-2i-6T9"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <constraints>
@@ -385,7 +389,6 @@
                                             <constraint firstItem="zkW-KN-Ibw" firstAttribute="height" secondItem="KxV-lr-t5N" secondAttribute="height" multiplier="0.549618" id="ClT-L6-osC"/>
                                             <constraint firstItem="zkW-KN-Ibw" firstAttribute="width" secondItem="KxV-lr-t5N" secondAttribute="width" multiplier="0.572464" id="DkJ-Ci-em3"/>
                                             <constraint firstItem="Nea-wd-2qp" firstAttribute="height" secondItem="KxV-lr-t5N" secondAttribute="height" multiplier="0.916031" id="QPS-sr-zR5"/>
-                                            <constraint firstItem="zkW-KN-Ibw" firstAttribute="leading" secondItem="KxV-lr-t5N" secondAttribute="leading" constant="60" id="THR-F5-GUb"/>
                                             <constraint firstItem="zkW-KN-Ibw" firstAttribute="centerY" secondItem="KxV-lr-t5N" secondAttribute="centerY" constant="1.1666660308837891" id="Y1k-5o-DNP"/>
                                             <constraint firstItem="Nea-wd-2qp" firstAttribute="width" secondItem="KxV-lr-t5N" secondAttribute="width" multiplier="0.0966184" id="ZdE-fr-8vn"/>
                                             <constraint firstItem="Nea-wd-2qp" firstAttribute="leading" secondItem="KxV-lr-t5N" secondAttribute="leading" constant="12" id="rew-da-8Ox"/>
@@ -399,6 +402,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="XW2-wf-R9K"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="gQD-ET-gdk"/>
+                                </connections>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1mA-aw-h80">
                                 <rect key="frame" x="20" y="404" width="335" height="53"/>
@@ -412,7 +419,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="49" id="8xo-Pn-qYD"/>
                                                     <constraint firstAttribute="width" secondItem="vaQ-ko-0rD" secondAttribute="height" multiplier="1:1" id="zGb-cH-59I"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" backgroundImage="Category_Еда">
+                                                <state key="normal" title="Еда" backgroundImage="Category_Еда">
                                                     <color key="titleColor" red="1" green="0.38431372549019605" blue="0.38431372549019605" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -437,7 +444,7 @@
                                                     <constraint firstAttribute="width" secondItem="bKZ-uf-AcK" secondAttribute="height" multiplier="1:1" id="OF3-jk-2tv"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="49" id="Ptm-0b-JdY"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" backgroundImage="Category_Одежда">
+                                                <state key="normal" title="Одежда" backgroundImage="Category_Одежда">
                                                     <color key="titleColor" red="1" green="0.38431372549019605" blue="0.38431372549019605" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -462,7 +469,7 @@
                                                     <constraint firstAttribute="width" secondItem="fFe-3O-Hyl" secondAttribute="height" multiplier="1:1" id="O4S-zA-u3O"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="49" id="QUD-Mp-m5L"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" backgroundImage="Category_Связь">
+                                                <state key="normal" title="Связь" backgroundImage="Category_Связь">
                                                     <color key="titleColor" red="1" green="0.38431372549019605" blue="0.38431372549019605" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -487,7 +494,7 @@
                                                     <constraint firstAttribute="width" secondItem="c2H-WF-0kf" secondAttribute="height" multiplier="1:1" id="Gmt-jF-M8Z"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="49" id="cxj-fL-9zi"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" backgroundImage="Category_Досуг">
+                                                <state key="normal" title="Досуг" backgroundImage="Category_Досуг">
                                                     <color key="titleColor" red="1" green="0.38431372549019605" blue="0.38431372549019605" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -512,7 +519,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="49" id="COc-5q-mBz"/>
                                                     <constraint firstAttribute="width" secondItem="C9X-Zz-c1r" secondAttribute="height" multiplier="1:1" id="PZr-gS-SaQ"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" backgroundImage="Category_Красота">
+                                                <state key="normal" title="Красота" backgroundImage="Category_Красота">
                                                     <color key="titleColor" red="1" green="0.38431372549019605" blue="0.38431372549019605" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -537,7 +544,7 @@
                                                     <constraint firstAttribute="width" secondItem="XNb-YB-LfX" secondAttribute="height" multiplier="1:1" id="prw-cT-Q3J"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="49" id="wtI-wT-IOe"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" backgroundImage="Category_Авто">
+                                                <state key="normal" title="Авто" backgroundImage="Category_Авто">
                                                     <color key="titleColor" red="1" green="0.38431372549019605" blue="0.38431372549019605" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -565,6 +572,8 @@
                             <constraint firstItem="KWC-q7-OQf" firstAttribute="top" secondItem="Bnb-4y-LVj" secondAttribute="bottom" constant="12" id="CPM-41-v3l"/>
                             <constraint firstItem="1mA-aw-h80" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0792411" id="Cou-F6-PN9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bnb-4y-LVj" secondAttribute="trailing" constant="20" id="EeN-2E-IPY"/>
+                            <constraint firstItem="Vqp-Qz-HM6" firstAttribute="width" secondItem="6az-Iw-ecw" secondAttribute="width" multiplier="2" constant="1" id="Hap-eC-qFd"/>
+                            <constraint firstItem="8SF-tY-P7b" firstAttribute="width" secondItem="6az-Iw-ecw" secondAttribute="width" id="Huc-GH-f7O"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vqp-Qz-HM6" secondAttribute="trailing" constant="20" id="IF1-jY-36Z"/>
                             <constraint firstItem="efM-kZ-bNL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IMy-YU-rqr"/>
                             <constraint firstItem="Vqp-Qz-HM6" firstAttribute="leading" secondItem="8SF-tY-P7b" secondAttribute="trailing" constant="1" id="JN6-kD-A94"/>
@@ -575,7 +584,6 @@
                             <constraint firstItem="Bnb-4y-LVj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="fUd-CM-Py3"/>
                             <constraint firstItem="KWC-q7-OQf" firstAttribute="leading" secondItem="Ddx-K1-0sN" secondAttribute="trailing" constant="15" id="ibX-bZ-ihj"/>
                             <constraint firstItem="KWC-q7-OQf" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.449275" id="kSs-0y-Ulm"/>
-                            <constraint firstItem="Vqp-Qz-HM6" firstAttribute="width" secondItem="6az-Iw-ecw" secondAttribute="height" multiplier="30:64" constant="82" id="o24-qF-kQd"/>
                             <constraint firstItem="8SF-tY-P7b" firstAttribute="top" secondItem="KWC-q7-OQf" secondAttribute="bottom" constant="1" id="ohC-jR-vHZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1mA-aw-h80" secondAttribute="trailing" constant="20" id="qDT-Q8-1Pf"/>
                             <constraint firstItem="Ddx-K1-0sN" firstAttribute="height" secondItem="KWC-q7-OQf" secondAttribute="height" multiplier="1.33594" id="qw1-lq-QBL"/>
@@ -584,7 +592,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KWC-q7-OQf" secondAttribute="trailing" constant="20" id="s0P-c2-5gJ"/>
                             <constraint firstAttribute="bottom" secondItem="efM-kZ-bNL" secondAttribute="bottom" id="s5Q-52-NPo"/>
                             <constraint firstItem="1mA-aw-h80" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xih-f2-MXk"/>
-                            <constraint firstItem="8SF-tY-P7b" firstAttribute="width" secondItem="6az-Iw-ecw" secondAttribute="width" multiplier="1.00901" id="xj3-Wx-8XR"/>
                             <constraint firstItem="Vqp-Qz-HM6" firstAttribute="top" secondItem="KWC-q7-OQf" secondAttribute="bottom" constant="1" id="zLl-mJ-onV"/>
                             <constraint firstItem="1mA-aw-h80" firstAttribute="top" secondItem="8SF-tY-P7b" secondAttribute="bottom" constant="10" id="zRP-hI-CnB"/>
                         </constraints>
@@ -596,7 +603,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Money" id="ps9-Ln-jEk"/>
                     <connections>
+                        <outlet property="allSpendLabel" destination="eEd-cd-KXy" id="cn0-tD-fSp"/>
                         <outlet property="displayLabel" destination="Bnb-4y-LVj" id="8xx-qJ-hXC"/>
+                        <outlet property="howManyCanSpendLabel" destination="wy8-u5-myU" id="2ZL-Bz-9m5"/>
+                        <outlet property="limitLabel" destination="ykx-Lb-RR6" id="czG-Ut-1xF"/>
+                        <outlet property="spendByCheckLabel" destination="e7w-KT-Bua" id="dmw-9o-ghH"/>
                         <outlet property="tableView" destination="efM-kZ-bNL" id="hbg-FM-laF"/>
                         <outletCollection property="keyboardButtons" destination="8SF-tY-P7b" collectionClass="NSMutableArray" id="oXv-h2-a1U"/>
                         <outletCollection property="keyboardButtons" destination="6az-Iw-ecw" collectionClass="NSMutableArray" id="qfK-FW-fVR"/>
